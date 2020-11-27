@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.875" name="Cinema">
+  <DataContextMoniker Name="/CinemaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="941fa622-e206-4351-97ca-7bf30345b4e7" absoluteBounds="0.75, 9.875, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/CinemaDataContext/Actor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd29d4f9-11fb-47ea-b86b-caf0c50162c6" absoluteBounds="0.765, 10.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d8aa305-e31c-4f05-ad44-826387c61cee" absoluteBounds="3.5, 4.125, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/CinemaDataContext/Cast" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0020f9c-9f9c-4195-a1a0-4d620579acda" absoluteBounds="3.515, 4.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="691979c6-4ced-4c4f-84e6-acd4f8f14da9" absoluteBounds="0.75, 4, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CinemaDataContext/Movy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="31b7ccea-2021-46cb-96d3-8106b347327c" absoluteBounds="0.765, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d671f5f7-4e89-474d-ac0a-5915b6ddd6f5" absoluteBounds="6.25, 7.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CinemaDataContext/Prenotazione" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bbe65241-ee73-457b-82f2-12d4186fafcd" absoluteBounds="6.265, 7.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8eee370c-e49e-4e81-9991-77d56f86ca5e" absoluteBounds="3.5, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/CinemaDataContext/Programmazione" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d2e6ce86-14d4-4e75-8cff-1f87e630f096" absoluteBounds="3.515, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="00f7e7f0-f911-4dd0-9828-a7f7e719bed5" absoluteBounds="0.75, 7.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/CinemaDataContext/Sale" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c2a1268-b2f2-4243-a509-24ee1b325236" absoluteBounds="0.765, 7.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 10.7604484049479); (4.5 : 10.7604484049479); (4.5 : 5.31899251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CinemaDataContext/Actor/Actor_Cast" />
+      <nodes>
+        <classShapeMoniker Id="941fa622-e206-4351-97ca-7bf30345b4e7" />
+        <classShapeMoniker Id="9d8aa305-e31c-4f05-ad44-826387c61cee" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.72199625651042); (3.04166666666667 : 4.72199625651042 : JumpStart); (3.20833333333333 : 4.72199625651042 : JumpEnd); (3.5 : 4.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CinemaDataContext/Movy/Movy_Cast" />
+      <nodes>
+        <classShapeMoniker Id="691979c6-4ced-4c4f-84e6-acd4f8f14da9" />
+        <classShapeMoniker Id="9d8aa305-e31c-4f05-ad44-826387c61cee" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.73159912109375); (7.25 : 1.73159912109375); (7.25 : 7.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CinemaDataContext/Programmazione/Programmazione_Prenotazione" />
+      <nodes>
+        <classShapeMoniker Id="8eee370c-e49e-4e81-9991-77d56f86ca5e" />
+        <classShapeMoniker Id="d671f5f7-4e89-474d-ac0a-5915b6ddd6f5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 4); (1.75 : 1.73159912109375); (3.5 : 1.73159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CinemaDataContext/Movy/Movy_Programmazione" />
+      <nodes>
+        <classShapeMoniker Id="691979c6-4ced-4c4f-84e6-acd4f8f14da9" />
+        <classShapeMoniker Id="8eee370c-e49e-4e81-9991-77d56f86ca5e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.375); (3.125 : 7); (3.125 : 2.25365068164062); (3.5 : 2.25365068164062)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CinemaDataContext/Sale/Sale_Programmazione" />
+      <nodes>
+        <classShapeMoniker Id="00f7e7f0-f911-4dd0-9828-a7f7e719bed5" />
+        <classShapeMoniker Id="8eee370c-e49e-4e81-9991-77d56f86ca5e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
